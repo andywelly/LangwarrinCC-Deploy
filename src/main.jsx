@@ -1,5 +1,9 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import {
+  createHashRouter,
+  RouterProvider
+} from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import Services from './pages/Services.jsx';
 import Childcare from './pages/Childcare.jsx';
@@ -13,27 +17,51 @@ import Hobbies from './pages/Hobbies.jsx';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-import {
-  HashRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <Home />
+  },
+  {
+    path: "services",
+    element: <Services />
+  },
+  {
+    path: "childcare",
+    element: <Childcare />
+  },
+  {
+    path: "forms",
+    element: <Forms />
+  },
+  {
+    path: "about",
+    element: <About />
+  },
+  {
+    path: "enrol",
+    element: <Enrol />
+  },
+  {
+    path: "literacy",
+    element: <Literacy />
+  },
+  {
+    path: "computer",
+    element: <Computer />
+  },
+  {
+    path: "community",
+    element: <Community />
+  },
+  {
+    path: "hobbies",
+    element: <Hobbies />
+  }
+]);
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <HashRouter>
-      <Routes>
-        <Route path="LangwarrinCC-Deploy/" element={<Home />} />
-        <Route path="LangwarrinCC-Deploy/services" element={<Services />} />
-        <Route path="LangwarrinCC-Deploy/childcare" element={<Childcare />} />
-        <Route path="LangwarrinCC-Deploy/forms" element={<Forms />} />
-        <Route path="LangwarrinCC-Deploy/about" element={<About />} />
-        <Route path="LangwarrinCC-Deploy/enrol" element={<Enrol />} />
-        <Route path="LangwarrinCC-Deploy/literacy" element={<Literacy />} />
-        <Route path="LangwarrinCC-Deploy/computer" element={<Computer />} />
-        <Route path="LangwarrinCC-Deploy/community" element={<Community />} />
-        <Route path="LangwarrinCC-Deploy/hobbies" element={<Hobbies />} />
-      </Routes>
-    </HashRouter>
-  </StrictMode>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );
