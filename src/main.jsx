@@ -20,20 +20,18 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => (
   <Router>
-    <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/childcare" element={<Childcare />} />
-      <Route path="/forms" element={<Forms />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/enrol" element={<Enrol />} />
-      <Route path="/literacy" element={<Literacy />} />
-      <Route path="/computer" element={<Computer />} />
-      <Route path="/community" element={<Community />} />
-      <Route path="/hobbies" element={<Hobbies />} />
+      <Route path="services" element={<Services />} />
+      <Route path="childcare" element={<Childcare />} />
+      <Route path="forms" element={<Forms />} />
+      <Route path="about" element={<About />} />
+      <Route path="enrol" element={<Enrol />} />
+      <Route path="literacy" element={<Literacy />} />
+      <Route path="computer" element={<Computer />} />
+      <Route path="community" element={<Community />} />
+      <Route path="hobbies" element={<Hobbies />} />
     </Routes>
-    <Footer />
   </Router>
 );
 

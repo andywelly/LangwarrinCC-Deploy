@@ -26,19 +26,19 @@ function NavigationBar() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="/" className="links">
+                <Nav.Link href="#/" className="links">
                   <Button variant="dark">Home</Button>
                 </Nav.Link>
-                <Nav.Link href="/services">
+                <Nav.Link href="#/services">
                   <Button variant="dark">Services</Button>
                 </Nav.Link>
-                <Nav.Link href="/childcare">
+                <Nav.Link href="#/childcare">
                   <Button variant="dark">Childcare</Button>
                 </Nav.Link>
-                <Nav.Link href="/forms">
+                <Nav.Link href="#/forms">
                   <Button variant="dark">Forms</Button>
                 </Nav.Link>
-                <Nav.Link href="/about">
+                <Nav.Link href="#/about">
                   <Button variant="dark">About Us</Button>
                 </Nav.Link>
                 {/* <NavDropdown title="Services" id="services-dropdown">
