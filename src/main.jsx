@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-// import Home from './pages/Home.jsx'
+import Home from './pages/Home.jsx'
 // import Services from './pages/Services.jsx'
 // import Childcare from './pages/Childcare.jsx'
 // import Forms from './pages/Forms.jsx'
@@ -65,6 +65,6 @@ import { createRoot } from 'react-dom/client'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <h1>Hello World</h1>
+    <Home/>
   </StrictMode>,
 )
