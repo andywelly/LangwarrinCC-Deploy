@@ -23,16 +23,16 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HashRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="services" element={<Services />} />
-        <Route path="childcare" element={<Childcare />} />
-        <Route path="forms" element={<Forms />} />
-        <Route path="about" element={<About />} />
-        <Route path="enrol" element={<Enrol />} />
-        <Route path="literacy" element={<Literacy />} />
-        <Route path="computer" element={<Computer />} />
-        <Route path="community" element={<Community />} />
-        <Route path="hobbies" element={<Hobbies />} />
+        <Route path="LangwarrinCC-Deploy/" element={<Home />} />
+        <Route path="LangwarrinCC-Deploy/services" element={<Services />} />
+        <Route path="LangwarrinCC-Deploy/childcare" element={<Childcare />} />
+        <Route path="LangwarrinCC-Deploy/forms" element={<Forms />} />
+        <Route path="LangwarrinCC-Deploy/about" element={<About />} />
+        <Route path="LangwarrinCC-Deploy/enrol" element={<Enrol />} />
+        <Route path="LangwarrinCC-Deploy/literacy" element={<Literacy />} />
+        <Route path="LangwarrinCC-Deploy/computer" element={<Computer />} />
+        <Route path="LangwarrinCC-Deploy/community" element={<Community />} />
+        <Route path="LangwarrinCC-Deploy/hobbies" element={<Hobbies />} />
       </Routes>
     </HashRouter>
   </StrictMode>
