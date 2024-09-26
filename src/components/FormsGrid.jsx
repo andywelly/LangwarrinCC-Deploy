@@ -16,7 +16,7 @@ const EmploymentSummary = "Take a look at our employment opportunitis.";
 const MembershipSummary = "Join to be a member of the Langwarrin Community Today.";
 const AnnualSummary = "Read our annual report.";
 
-const FormLink = "/";  /*should lead to each pdf of each different forms*/ 
+const FormLink = "#/";  /*should lead to each pdf of each different forms*/ 
 
 const FormsGrid = (prop) => {
     const Summary = prop.Summary;

@@ -17,12 +17,12 @@ const ChildcareSummary = "Different fun activities and classes tailored for diff
 const CommunitySummary = "Connect with community groups for shared interests by joining our vibrant offerings.";
 const HobbiesSummary = "Join workshops and lasses to explore various arts and crafts to discover your creative side.";
 
-const ComputerLink = "/computer";
-const EnrolLink = "/enrol";
-const LiteracyLink = "/literacy";
-const ChildcareLink = "/childcare";
-const CommunityLink = "/community";
-const HobbiesLink = "/hobbies";
+const ComputerLink = "#/computer";
+const EnrolLink = "#/enrol";
+const LiteracyLink = "#/literacy";
+const ChildcareLink = "#/childcare";
+const CommunityLink = "#/community";
+const HobbiesLink = "#/hobbies";
 
 const ServicesGrid = (prop) => {
     const Summary = prop.Summary;
