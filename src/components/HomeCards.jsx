@@ -19,7 +19,7 @@ function HomeCards() {
           </Card.Body>
           <Card.Footer className='card-footer'>
             <Button variant="secondary" size="lg">
-              <Nav.Link href="/about" className='read-more-link'>Read More</Nav.Link>
+              <Nav.Link href="#/about" className='read-more-link'>Read More</Nav.Link>
             </Button>
   
           </Card.Footer>
